@@ -28,7 +28,7 @@ function mobileMenuToggle() {
 }
 
 const observerOptions = {
-    root: null,
+    root: document,
     rootMargin: "0px",
     threshold: 0.5
   };
