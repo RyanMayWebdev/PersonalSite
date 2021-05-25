@@ -346,7 +346,7 @@ nav {
     justify-content: space-between;
     list-style: none;
     margin: 0 auto;
-    padding-top: 150px;
+    padding: 150px 0 0 0;
     width: 40%;
 
 }
