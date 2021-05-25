@@ -30,18 +30,27 @@ function mobileMenuToggle() {
 const observerOptions = {
     root: document,
     rootMargin: "0px",
-    threshold: 0.5
-  };
-  
-  function observerCallback(entries) {
+    threshold: 0.3
+};
+
+function observerCallback(entries) {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("fadeIn");
-      } 
+        if (entry.isIntersecting) {
+            entry.target.classList.add("fadeIn");
+        }
     });
-  }
-  
-  const fadeElements = document.querySelectorAll(".fade");
-  
-  const observer = new IntersectionObserver(observerCallback, observerOptions);
-  fadeElements.forEach(element => observer.observe(element));
+}
+
+const fadeElements = document.querySelectorAll(".fade");
+const enlargeElements = document.querySelectorAll(".flexContainer div");
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+fadeElements.forEach(element => observer.observe(element));
+
+for (let index of enlargeElements){
+    index.addEventListener("mouseover",enlarge);
+    index.addEventListener("mouseout",enlarge);
+}
+function enlarge() {
+    this.classList.toggle("fadeEnlarge");
+}
