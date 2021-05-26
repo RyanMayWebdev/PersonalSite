@@ -1,7 +1,7 @@
 const navLinks = document.querySelectorAll(".navLink");
 let isMobile = false;
 
-if (window.screen.width <= 700) {
+if (window.screen.width <= 768) {
     isMobile = true;
 }
 let lastScrollTop = window.pageYOffset;
