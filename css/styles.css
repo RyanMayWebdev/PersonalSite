@@ -74,6 +74,10 @@ p {
     margin-right: 15px;
 }
 .fade {
+    -khtml-opacity: 0;
+    -webkit-transition: -webkit-all 0.5s;
+    -webkit-transform: -webkit-scale(1);
+    -webkit-transform: -webkit-translateX(100px);
     opacity: 0;
     transform: scale(1);
     transform: translateX(100px);
@@ -81,11 +85,14 @@ p {
 }
 
 .fadeIn {
+    -khtml-opacity: 1;
+    -webkit-transform: -webkit-translateX(0px);
     opacity: 1;
     transform: translateX(0px);
 }
 
 .fadeEnlarge{
+    -webkit-transform: -webkit-scale(1.2);
     transform: scale(1.2);
 }
 .flexContainer {
@@ -100,6 +107,7 @@ p {
     border: 1px solid #2b2b2b;
     border-radius: 15px;
     box-shadow: 0 0 25px #1d5324;
+    display: inline-block;
     flex-shrink: 1;
     margin: 75px;
     padding: 50px 25px;
