@@ -48,7 +48,6 @@ p {
 
 .articleColoured {
     background-color: #45bd55;
-    color: #2b2b2b;
 }
 
 .articleColoured h2 {
@@ -127,7 +126,7 @@ p {
 
 .projectCard {
     border-radius: 20px;
-    box-shadow: 0px 0px 25px #1d5324;
+    box-shadow: 0px 0px 25px #000;
     width: 250px;
 }
 
