@@ -64,10 +64,6 @@ p {
     width: 70vw;
 }
 
-.articleColoured .flexContainer div {
-    background-image: linear-gradient(45deg, #2b2b2b, #464545, #2b2b2b);
-} 
-
 .icon{
     font-size: 1.6em;
     margin-right: 15px;
@@ -77,6 +73,7 @@ p {
     -webkit-transition: -webkit-all 0.5s;
     -webkit-transform: -webkit-scale(1);
     -webkit-transform: -webkit-translateX(100px);
+    background-image: linear-gradient(45deg, #2b2b2b, #464545, #2b2b2b);
     opacity: 0;
     transform: scale(1);
     transform: translateX(100px);
