@@ -42,7 +42,7 @@ function observerCallback(entries) {
 }
 
 const fadeElements = document.querySelectorAll(".fade");
-const enlargeElements = document.querySelectorAll(".flexContainer div");
+const enlargeElements = document.querySelectorAll('.projectCard');
 
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 fadeElements.forEach(element => observer.observe(element));
