@@ -243,7 +243,7 @@ nav {
 /* Mobile nav menu, for tablet and below */
 
 .fa-bars {
-    color: #ffffff;
+    color: #333;
     padding: 10px 0px 20px 30px;
 }
 .mobileDropdown {
