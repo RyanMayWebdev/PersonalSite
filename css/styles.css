@@ -195,6 +195,7 @@ nav {
     font-size: 2em;
     position: absolute;
     width: 100vw;
+    z-index: 20;
 }
 
 .navContainer {
