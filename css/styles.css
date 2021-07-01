@@ -70,7 +70,7 @@ p {
     border: none;
     border-radius: 50%;
     bottom: 50px;
-    color: #333;
+    color: #fff;
     height: max-content;
     padding: 10px 17px;
     position: fixed;
@@ -83,6 +83,9 @@ p {
     padding: 15px;
 }
 
+.backToTopBtn:hover{
+    color: #333;
+}
 .coloured {
     color: #8cd696;
 }
@@ -117,6 +120,10 @@ p {
 
 .contactList:hover a {
     color: #8cd696;
+}
+
+#CTA:hover{
+    color: #333;
 }
 
 
