@@ -32,6 +32,9 @@ h3 {
     font-size: 2em;
 }
 
+h5 {
+    margin: 0;
+}
 
 html {
     scroll-behavior: smooth;
@@ -170,6 +173,12 @@ p {
     width: 70%;
 }
 
+footer {
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 10px 0;
+}
+
 .hideElement {
     transform: translateX(250px);
     visibility: hidden;
@@ -250,7 +259,7 @@ nav {
 }
 
 .projectImg {
-    box-shadow: -5px 30px 30px #d3d3d3;
+    box-shadow: -10px 20px 0 #8cd696;
     margin: 50px;
 }
 
