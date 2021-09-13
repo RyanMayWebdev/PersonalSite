@@ -25,6 +25,7 @@ for (let link of navLinks) {
 
 function mobileMenuToggle() {
     document.querySelector(".mobileDropdown").classList.toggle("revealElement");
+    document.querySelector('#menuDrop').classList.toggle('fa-times');
 }
 
 const observerOptions = {
