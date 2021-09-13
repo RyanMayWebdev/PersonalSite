@@ -26,7 +26,7 @@
                 </ul>
 
                 <div class="navMobileMenu">
-                    <span class="fas fa-bars" id="menuDrop"></span>
+                    <span class="fas fa-bars iconAnimate" id="menuDrop"></span>
                     <ul class="mobileDropdown hideElement">
                         <li><a class="navLink" href="#welcome">Home</a></li>
                         <li><a class="navLink" href="#about">About</a></li>
@@ -41,7 +41,7 @@
             <!-- <div class="background backgroundImage"></div> -->
             <div class="background" id="particles-js">
             </div>
-            <section id="welcome">
+            <section id="welcome" class="welcome">
                 <div>
                     <h1 class="welcomeHeader">Web Development,</h1>
                     <h2 class="welcomeSubHeader">With Passion.</h2>
@@ -50,11 +50,11 @@
             </section>
         </header>
         <main>
-            <section id="about">
+            <section id="about" class="about">
                 <article class="articleDark" id="description">
                     <div class="articleContainer fade flexContainer">
                         <img class="profileImage" src="images/ryan.jpg" alt="Profile picture of Ryan May">
-                        <div>
+                        <div class="aboutDescription">
                             <h2>Hey, I'm Ryan May!</h2>
                             <p>I'm a web developer who is passionate about coding and being creative. I'm constantly
                                 looking
@@ -106,64 +106,68 @@
                         <ul class="flexContainer fade">
                             <!-- skills will be entered here with icons-->
                             <li class="skillBox">
-                                <span class="fas fa-mobile-alt techIcon"></span>
+                                <i class="fas fa-mobile-alt techIcon"></i>
                                 <h4>Responsive Web Design</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="fas fa-book techIcon"></span>
+                                <i class="fas fa-book techIcon"></i>
                                 <h4>Research</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="fas fa-brain techIcon"></span>
+                                <i class="fas fa-brain techIcon"></i>
                                 <h4>Fast Learner</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="fas fa-tools techIcon"></span>
+                                <i class="fas fa-tools techIcon"></i>
                                 <h4>Troubleshooting</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="fas fa-users techIcon"></span>
+                                <i class="fas fa-users techIcon"></i>
                                 <h4>Team player</h4>
                             </li>
 
                             <li class="skillBox">
-                                <span class="devicon-html5-plain techIcon"></span>
+                                <i class="devicon-html5-plain techIcon"></i>
                                 <h4>HTML 5</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="devicon-css3-plain techIcon"></span>
+                                <i class="devicon-css3-plain techIcon"></i>
                                 <h4>CSS 3</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="devicon-javascript-plain techIcon"></span>
+                                <i class="devicon-sass-original techIcon"></i>
+                                <h4>SASS</h4>
+                            </li>
+                            <li class="skillBox">
+                                <i class="devicon-javascript-plain techIcon"></i>
                                 <h4>JavaScript</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="devicon-jquery-plain techIcon"></span>
+                                <i class="devicon-jquery-plain techIcon"></i>
                                 <h4>JQuery</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="devicon-nodejs-plain techIcon"></span>
+                                <i class="devicon-nodejs-plain techIcon"></i>
                                 <h4>Node.JS</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="devicon-npm-original-wordmark techIcon"></span>
+                                <i class="devicon-npm-original-wordmark techIcon"></i>
                                 <h4>NPM</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="devicon-git-plain techIcon"></span>
+                                <i class="devicon-git-plain techIcon"></i>
                                 <h4>Git</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="devicon-heroku-original techIcon"></span>
+                                <i class="devicon-heroku-original techIcon"></i>
                                 <h4>Heroku</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="devicon-mongodb-plain techIcon"></span>
+                                <i class="devicon-mongodb-plain techIcon"></i>
                                 <h4>MongoDB</h4>
                             </li>
                             <li class="skillBox">
-                                <span class="devicon-vscode-plain techIcon"></span>
+                                <i class="devicon-vscode-plain techIcon"></i>
                                 <h4>VSCode</h4>
                             </li>
                         </ul>
@@ -171,14 +175,68 @@
                 </article>
             </section>
 
-            <section id="projects">
+            <section id="projects" class="projects">
 
                 <!--Projects will be displayed here. Add in JS to make project tiles flip when hovered to display information. Links below to github and live page-->
                 <div class="projectContainer">
                     <h2>Projects</h2>
                     <article class="fade projectCard">
 
-                        <img class="projectImg right" src="images/movieReel.PNG" alt="Movie Reel site image">
+                        <div class="projectImgContainer"><img class="projectImg" src="images/BarOne.JPG"
+                                alt="Image of Bar-One website"></div>
+                        <div class="projectDescription">
+                            <h3>Bar One</h3>
+                            <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> SASS </h4>
+                            <p> This is a 3 page website that was created based on a provided PSD. Only the desktop
+                                view was provided and the mobile view was left for me to decide what would look and
+                                function best.</p>
+
+                            <p>
+                                I used only HTML and SASS to develop this website as requested. Each page has it's own
+                                partial, combined with a general styling partial and media query partial. This site is
+                                also fully responsive and features an animated dropdown mobile menu done through css.
+                            </p>
+
+                            <p>
+                                Additionally, accessability was kept in mind the whole way through. The HTML is laid out
+                                semantically, all inputs have labels, all images have descriptive alt text and font size
+                                was set to 125% as a base or 20px.
+                            </p>
+                            </p>
+                            <a class="projectLink" href="https://projectone.ryanmaycodes.com/"
+                                target="_blank">Live
+                                Site</a>
+                            <a class="outlined projectLink" href="https://github.com/RyanMayWebdev/RyanMayProjectOne"
+                                target="_blank">GitHub
+                                Repo</a>
+                        </div>
+                    </article>
+                    <article class="fade projectCard right">
+
+                        <div class="projectImgContainer"><img class="projectImg" src="images/shutter.JPG"
+                                alt="Image of Shutter website"></div>
+                        <div class="projectDescription">
+                            <h3>Shutter</h3>
+                            <h4>HTML5 <span class="coloured">|</span> CSS3</h4>
+                            <p> A single page PSD conversion. This project was to be done in only HTML and CSS. A
+                                desktop and mobile design were provided, along with a styling guide for specific
+                                font's and colours. This site is both fully responsive, using media queries and
+                                flexbox in order to fit all screen sixes but is also accessible.
+                                Font-size had a base value of 125%, images have descriptive alt text and any inputs
+                                have labels.
+                            </p>
+                            <a class="projectLink" href="https://ryanmaywebdev.github.io/ShutterAssignment/"
+                                target="_blank">Live
+                                Site</a>
+                            <a class="outlined projectLink" href="https://github.com/RyanMayWebdev/ShutterAssignment"
+                                target="_blank">GitHub
+                                Repo</a>
+                        </div>
+                    </article>
+                    <article class="fade projectCard">
+
+                        <div class="projectImgContainer"><img class="projectImg" src="images/movieReel.PNG"
+                                alt="Movie Reel site image"></div>
                         <div class="projectDescription">
                             <h3>Movie Reel</h3>
                             <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
@@ -202,9 +260,10 @@
                                 Repo</a>
                         </div>
                     </article>
-                    <article class="fade projectCard">
+                    <article class="fade projectCard right">
 
-                        <img class="projectImg left" src="images/Calc.PNG" alt="calculator site Image">
+                        <div class="projectImgContainer"><img class="projectImg" src="images/Calc.PNG"
+                                alt="calculator site Image"></div>
                         <div class="projectDescription">
                             <h3>Calculator</h3>
                             <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
@@ -227,13 +286,14 @@
                     </article>
                     <article class="fade projectCard">
 
-                        <img class="projectImg right" src="images/HoneyDoo.PNG" alt="Honey-Doo site Image">
+                        <div class="projectImgContainer"><img class="projectImg right" src="images/HoneyDoo.PNG"
+                                alt="Honey-Doo site Image"></div>
                         <div class="projectDescription">
                             <h3>Honey-Doo</h3>
                             <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
                                 <span class="coloured">|</span> Node <span class="coloured">|</span> Express <span
                                     class="coloured">|</span> EJS <span class="coloured">|</span> MongoDB</h4>
-                            <p> Current work in progress. A to-do list/ daily planner that allows you to track tasks,
+                            <p> Work in progress. A to-do list/ daily planner that allows you to track tasks,
                                 based
                                 on to-do, in progress and completed with complete CRUD function.
                                 On the backend im using Node and MongoDB to process request and store users and their
@@ -242,16 +302,37 @@
                                 I plan on adding the ability to create teams/groups and make this site similar to Jira
                                 but
                                 for individuals/couples. Additionally, I'm using the OpenWeather api
-                                to get the current weather conditions. I will also be upgrading this site to use React
-                                shortly.
+                                to get the current weather conditions. I will also be upgrading this site to use React.
                             </p>
                             <a class="projectLink" href="https://honey-doo.herokuapp.com/" target="_blank">Live Site</a>
                         </div>
                     </article>
+
                     <article class="fade projectCard">
 
-                        <img class="projectImg left" src="images/Pathfinder.PNG"
-                            alt="Pathfinder Dice Roll Generator Website Image">
+                        <div class="projectImgContainer"><img class="projectImg right" src="images/blogSite.PNG"
+                                alt="Blog Site Image"></div>
+                        <div class="projectDescription">
+                            <h3>Blog Site</h3>
+                            <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
+                                <span class="coloured">|</span> Node <span class="coloured">|</span> Express <span
+                                    class="coloured">|</span> EJS <span class="coloured">|</span> MongoDB</h4>
+                            <p> A blog website created as a project to demonstrate mostly back end skills. This site is
+                                complete with authentication and a database hosted through MongoDB Atlas and AWS.
+                            </p>
+                            <a class="projectLink" href="https://web-devblog.herokuapp.com/" target="_blank">Live
+                                Site</a>
+                            <a class="outlined projectLink" href="https://github.com/RyanMayWebdev/Blog-Website"
+                                target="_blank">GitHub Repo</a>
+                        </div>
+                    </article>
+
+                    <article class="fade projectCard right">
+
+                        <div class="projectImgContainer">
+                            <img class="projectImg left" src="images/Pathfinder.PNG"
+                                alt="Pathfinder Dice Roll Generator Website Image">
+                        </div>
                         <div class="projectDescription">
                             <h3>Pathfinder Dice Roll Generator</h3>
                             <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
@@ -272,7 +353,8 @@
 
                     <article class="fade projectCard">
 
-                        <img class="projectImg right" src="images/restaurant.PNG" alt="Restuarant website image">
+                        <div class="projectImgContainer"><img class="projectImg right" src="images/restaurant.PNG"
+                                alt="Restuarant website image"></div>
                         <div class="projectDescription">
                             <h3>Restaurant Website</h3>
                             <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
@@ -292,38 +374,7 @@
                         </div>
                     </article>
 
-                    <article class="fade projectCard">
 
-                        <img class="projectImg left" src="images/tooling.PNG" alt="Tooling documentation website image">
-                        <div class="projectDescription">
-                            <h3>Tooling Documentation Website</h3>
-                            <h4>HTML5 <span class="coloured">|</span> CSS3</h4>
-                            <p>A tool documentation website to inform employees of safety protocols and best practices,
-                                this was made for a large equipment dealership.
-                            </p>
-                            <a class="projectLink" href="https://ryanmaywebdev.github.io/ToromontTooling/"
-                                target="_blank">Live Site</a>
-                            <a class="outlined projectLink" href="https://github.com/RyanMayWebdev/ToromontTooling"
-                                target="_blank">GitHub Repo</a>
-                        </div>
-                    </article>
-                    <article class="fade projectCard">
-
-                        <img class="projectImg right" src="images/blogSite.PNG" alt="Blog Site Image">
-                        <div class="projectDescription">
-                            <h3>Blog Site</h3>
-                            <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
-                                <span class="coloured">|</span> Node <span class="coloured">|</span> Express <span
-                                    class="coloured">|</span> EJS <span class="coloured">|</span> MongoDB</h4>
-                            <p> A blog website created as a project to demonstrate mostly back end skills. This site is
-                                complete with authentication and a database hosted through MongoDB Atlas and AWS.
-                            </p>
-                            <a class="projectLink" href="https://web-devblog.herokuapp.com/" target="_blank">Live
-                                Site</a>
-                            <a class="outlined projectLink" href="https://github.com/RyanMayWebdev/Blog-Website"
-                                target="_blank">GitHub Repo</a>
-                        </div>
-                    </article>
 
                 </div>
 
@@ -350,7 +401,9 @@
 
             </section>
         </main>
-        <footer><h5>Designed and Developed by Ryan May</h5></footer>
+        <footer>
+            <h5>Designed and Developed by Ryan May</h5>
+        </footer>
     </div>
     <script src="JavaScript/index.js"></script>
     <script src="JavaScript/particles.js"></script>
