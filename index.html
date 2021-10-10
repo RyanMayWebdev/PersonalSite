@@ -17,6 +17,7 @@
 <body>
     <div class="pageWrapper">
         <header>
+
             <nav id="navTop">
                 <ul class="navContainer">
                     <li><a class="navLink" href="#about">About</a></li>
@@ -37,10 +38,12 @@
                 </div>
 
             </nav>
+
             <a class="backToTopBtn hideElement" href="#navTop"><span class="fas fa-arrow-up"></span></a>
             <!-- <div class="background backgroundImage"></div> -->
             <div class="background" id="particles-js">
             </div>
+
             <section id="welcome" class="welcome">
                 <div>
                     <h1 class="welcomeHeader">Web Development,</h1>
@@ -48,9 +51,14 @@
                     <a class="projectLink" id="CTA" href="#about">Discover</a>
                 </div>
             </section>
+
         </header>
+
+
         <main>
+
             <section id="about" class="about">
+
                 <article class="articleDark" id="description">
                     <div class="articleContainer fade flexContainer">
                         <img class="profileImage" src="images/ryan.jpg" alt="Profile picture of Ryan May">
@@ -100,6 +108,8 @@
                         </div>
                     </div>
                 </article>
+
+
                 <article class="articleColoured" id="skillTech">
                     <div class="articleContainer">
                         <h2>Skills <span class="coloured">|</span> Tech</h2>
@@ -107,68 +117,76 @@
                             <!-- skills will be entered here with icons-->
                             <li class="skillBox">
                                 <i class="fas fa-mobile-alt techIcon"></i>
-                                <h4>Responsive Web Design</h4>
+                                <p>Responsive Web Design</p>
                             </li>
                             <li class="skillBox">
                                 <i class="fas fa-book techIcon"></i>
-                                <h4>Research</h4>
+                                <p>Research</p>
                             </li>
                             <li class="skillBox">
                                 <i class="fas fa-brain techIcon"></i>
-                                <h4>Fast Learner</h4>
+                                <p>Fast Learner</p>
                             </li>
                             <li class="skillBox">
                                 <i class="fas fa-tools techIcon"></i>
-                                <h4>Troubleshooting</h4>
+                                <p>Troubleshooting</p>
                             </li>
                             <li class="skillBox">
                                 <i class="fas fa-users techIcon"></i>
-                                <h4>Team player</h4>
+                                <p>Team player</p>
                             </li>
 
                             <li class="skillBox">
                                 <i class="devicon-html5-plain techIcon"></i>
-                                <h4>HTML 5</h4>
+                                <p>HTML 5</p>
                             </li>
                             <li class="skillBox">
                                 <i class="devicon-css3-plain techIcon"></i>
-                                <h4>CSS 3</h4>
+                                <p>CSS 3</p>
                             </li>
                             <li class="skillBox">
                                 <i class="devicon-sass-original techIcon"></i>
-                                <h4>SASS</h4>
+                                <p>SASS</p>
                             </li>
                             <li class="skillBox">
                                 <i class="devicon-javascript-plain techIcon"></i>
-                                <h4>JavaScript</h4>
+                                <p>JavaScript</p>
                             </li>
                             <li class="skillBox">
                                 <i class="devicon-jquery-plain techIcon"></i>
-                                <h4>JQuery</h4>
+                                <p>JQuery</p>
+                            </li>
+                            <li class="skillBox">
+                                <i class="devicon-react-original techIcon"></i>
+                                <p>React</p>
+                            </li>
+                            <li class="skillBox">
+                                <i class="devicon-firebase-plain techIcon"></i>
+                                <p>Firebase</p>
                             </li>
                             <li class="skillBox">
                                 <i class="devicon-nodejs-plain techIcon"></i>
-                                <h4>Node.JS</h4>
+                                <p>Node.JS</p>
                             </li>
                             <li class="skillBox">
                                 <i class="devicon-npm-original-wordmark techIcon"></i>
-                                <h4>NPM</h4>
+                                <p>NPM</p>
                             </li>
                             <li class="skillBox">
                                 <i class="devicon-git-plain techIcon"></i>
-                                <h4>Git</h4>
+                                <p>Git</p>
                             </li>
                             <li class="skillBox">
                                 <i class="devicon-heroku-original techIcon"></i>
-                                <h4>Heroku</h4>
+                                <p>Heroku</p>
                             </li>
                             <li class="skillBox">
                                 <i class="devicon-mongodb-plain techIcon"></i>
-                                <h4>MongoDB</h4>
+                                <p>MongoDB</p>
                             </li>
                             <li class="skillBox">
                                 <i class="devicon-vscode-plain techIcon"></i>
-                                <h4>VSCode</h4>
+                                <p>VSCode</p>
                             </li>
                         </ul>
                     </div>
@@ -177,9 +195,61 @@
 
             <section id="projects" class="projects">
 
-                <!--Projects will be displayed here. Add in JS to make project tiles flip when hovered to display information. Links below to github and live page-->
                 <div class="projectContainer">
                     <h2>Projects</h2>
+
+                    <article class="fade projectCard">
+
+                        <div class="projectImgContainer"><img class="projectImg" src="images/bubbles.JPG"
+                                alt="Image of bubbles chat page"></div>
+                        <div class="projectDescription">
+                            <h3>Trivia Blitz</h3>
+                            <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
+                                <span class="coloured">|</span> React <span class="coloured">|</span> Firebase </h4>
+                            <p> Bubbles is a project developed to show my understanding of React and firebase and is a realtime chat app. Upon
+                                coming to the site the user is presented with a login/sign up screen which uses firebase
+                                authentication. Once authenticated, the user is brought to the general chat channel,
+                                which will show all messages from the firebase db for general chat. Each message is
+                                accompanied by a username and time stamp. The user can also use a dropdown to select
+                                other channels. Additionally, I've used the react-input-emoji package to allow users to
+                                input emojis into there messages. Messages are also filtered for profanity.
+                            </p>
+                            <a class="projectLink" href="https://bubbles-chat.netlify.app/"
+                                target="_blank">Live
+                                Site</a>
+                            <a class="outlined projectLink" href="https://github.com/RyanMayWebdev/Project3
+                                target=" _blank">GitHub
+                                Repo</a>
+                        </div>
+                    </article>
+
+                    <article class="fade projectCard right">
+
+                        <div class="projectImgContainer"><img class="projectImg" src="images/triviaBlitz.JPG"
+                                alt="Image of trivia Blitz site"></div>
+                        <div class="projectDescription">
+                            <h3>Trivia Blitz</h3>
+                            <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> SASS <span
+                                    class="coloured">|</span> JavaScript </h4>
+                            <p> A paired programming project with Daniel Noordegraaf using the Open Trivia API. The
+                                primary focus of this project was to use Javascript and an API to produce a trivia game.
+                                The game allows the user to select a category of questions, the difficulty and the
+                                amount of questions. This information is used to make the API call, which will return a
+                                set of question if they are found, if an error occurs or no results are found the user
+                                is notified of this and provided a link to the homepage.
+                                Once the API returns data, the game screen appears, presenting the question and 4
+                                answers that are randomized. A timer and score tracker are present, and score is
+                                rewarded based on a correct answer and time remaining.
+                            </p>
+                            <a class="projectLink" href="https://triviablitz.github.io/triviaBlitz/"
+                                target="_blank">Live
+                                Site</a>
+                            <a class="outlined projectLink" href="https://github.com/triviablitz/triviaBlitz
+                                target=" _blank">GitHub
+                                Repo</a>
+                        </div>
+                    </article>
+
                     <article class="fade projectCard">
 
                         <div class="projectImgContainer"><img class="projectImg" src="images/BarOne.JPG"
@@ -203,14 +273,14 @@
                                 was set to 125% as a base or 20px.
                             </p>
                             </p>
-                            <a class="projectLink" href="https://projectone.ryanmaycodes.com/"
-                                target="_blank">Live
+                            <a class="projectLink" href="https://projectone.ryanmaycodes.com/" target="_blank">Live
                                 Site</a>
                             <a class="outlined projectLink" href="https://github.com/RyanMayWebdev/RyanMayProjectOne"
                                 target="_blank">GitHub
                                 Repo</a>
                         </div>
                     </article>
+
                     <article class="fade projectCard right">
 
                         <div class="projectImgContainer"><img class="projectImg" src="images/shutter.JPG"
@@ -233,6 +303,7 @@
                                 Repo</a>
                         </div>
                     </article>
+
                     <article class="fade projectCard">
 
                         <div class="projectImgContainer"><img class="projectImg" src="images/movieReel.PNG"
@@ -260,6 +331,7 @@
                                 Repo</a>
                         </div>
                     </article>
+
                     <article class="fade projectCard right">
 
                         <div class="projectImgContainer"><img class="projectImg" src="images/Calc.PNG"
@@ -284,9 +356,10 @@
                                 Repo</a>
                         </div>
                     </article>
+
                     <article class="fade projectCard">
 
-                        <div class="projectImgContainer"><img class="projectImg right" src="images/HoneyDoo.PNG"
+                        <div class="projectImgContainer"><img class="projectImg" src="images/HoneyDoo.PNG"
                                 alt="Honey-Doo site Image"></div>
                         <div class="projectDescription">
                             <h3>Honey-Doo</h3>
@@ -308,9 +381,9 @@
                         </div>
                     </article>
 
-                    <article class="fade projectCard">
+                    <article class="fade projectCard right">
 
-                        <div class="projectImgContainer"><img class="projectImg right" src="images/blogSite.PNG"
+                        <div class="projectImgContainer "><img class="projectImg" src="images/blogSite.PNG"
                                 alt="Blog Site Image"></div>
                         <div class="projectDescription">
                             <h3>Blog Site</h3>
@@ -327,7 +400,7 @@
                         </div>
                     </article>
 
-                    <article class="fade projectCard right">
+                    <article class="fade projectCard">
 
                         <div class="projectImgContainer">
                             <img class="projectImg left" src="images/Pathfinder.PNG"
@@ -351,7 +424,7 @@
                         </div>
                     </article>
 
-                    <article class="fade projectCard">
+                    <article class="fade projectCard right">
 
                         <div class="projectImgContainer"><img class="projectImg right" src="images/restaurant.PNG"
                                 alt="Restuarant website image"></div>
